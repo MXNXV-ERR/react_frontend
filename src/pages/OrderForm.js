@@ -23,7 +23,7 @@ function OrderForm() {
     e.preventDefault();
     console.log(formData);
     // Send a request to your Ruby on Rails back-end
-    fetch('http://127.0.0.1:3000/orders', {
+    fetch('https://ruby-db-service.onrender.com/orders', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

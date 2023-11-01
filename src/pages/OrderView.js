@@ -6,7 +6,7 @@ function OrderView() {
 
   useEffect(() => {
     // Fetch data from the Rails backend
-    fetch('http://127.0.0.1:3000/allOrders')
+    fetch('https://ruby-db-service.onrender.com/allOrders')
       .then((response) => response.json())
       .then((data) => {
         setData(data);
