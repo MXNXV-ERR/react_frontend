@@ -42,6 +42,7 @@ function OrderForm() {
       .catch((error) => {
         // Handle errors, e.g., display an error message
         console.error(error);
+        window.alert(error);
         console.log(error.status);
       });
   };
